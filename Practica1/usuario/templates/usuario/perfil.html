@@ -1,0 +1,11 @@
+{% block content %}
+<h2>{{user}}</h2>
+<form method="post">
+  {% csrf_token %}
+  <p>Nombre de Usuario: {{user}}</p>
+  <p>Carrera: {{user.carrera}}</p>
+  <p>CUI: {{user.CUI}}</p>
+  <p>Email: {{user.email}}</p>
+  <button type="submit">Edit</button>
+</form>
+{% endblock %}
