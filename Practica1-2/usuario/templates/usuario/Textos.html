@@ -1,0 +1,12 @@
+{% block content %}
+<h2>{{user}}</h2>
+<form method="post">
+  {% csrf_token %}
+  <p>Documentos Subidos: </p>  
+  {%for obj in data%}  
+  </p> <font color ="blue">{{obj.nombre}}</font></p> 
+  {% endfor %}
+  <button type="submit", name='Subir Texto'>Subir Texto</button>
+  <button type="submit", name='Mostrar Texto'>Mostrar Texto</button>
+</form>
+{% endblock %}

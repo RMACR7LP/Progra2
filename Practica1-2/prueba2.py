@@ -1,0 +1,2 @@
+
+list = ['Turing', 'Cantor', 'Perelman']
